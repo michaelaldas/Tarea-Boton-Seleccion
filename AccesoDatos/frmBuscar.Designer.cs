@@ -32,6 +32,7 @@ namespace AccesoDatos
             this.label1 = new System.Windows.Forms.Label();
             this.comboPersona = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.datoTiempo = new System.Windows.Forms.DateTimePicker();
             this.txtPeso = new System.Windows.Forms.TextBox();
             this.txtNombres = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
@@ -42,7 +43,6 @@ namespace AccesoDatos
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnMostrar = new System.Windows.Forms.Button();
-            this.datoTiempo = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,6 +84,18 @@ namespace AccesoDatos
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de la persona";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // datoTiempo
+            // 
+            this.datoTiempo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.datoTiempo.Location = new System.Drawing.Point(359, 194);
+            this.datoTiempo.MaxDate = new System.DateTime(2021, 12, 21, 0, 0, 0, 0);
+            this.datoTiempo.MinDate = new System.DateTime(1794, 5, 13, 0, 0, 0, 0);
+            this.datoTiempo.Name = "datoTiempo";
+            this.datoTiempo.Size = new System.Drawing.Size(301, 20);
+            this.datoTiempo.TabIndex = 21;
+            this.datoTiempo.Value = new System.DateTime(2021, 12, 21, 0, 0, 0, 0);
             // 
             // txtPeso
             // 
@@ -180,17 +192,6 @@ namespace AccesoDatos
             this.btnMostrar.Text = "Mostrar";
             this.btnMostrar.UseVisualStyleBackColor = true;
             this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
-            // 
-            // datoTiempo
-            // 
-            this.datoTiempo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.datoTiempo.Location = new System.Drawing.Point(359, 194);
-            this.datoTiempo.MaxDate = new System.DateTime(2021, 12, 21, 0, 0, 0, 0);
-            this.datoTiempo.MinDate = new System.DateTime(1794, 5, 13, 0, 0, 0, 0);
-            this.datoTiempo.Name = "datoTiempo";
-            this.datoTiempo.Size = new System.Drawing.Size(301, 20);
-            this.datoTiempo.TabIndex = 21;
-            this.datoTiempo.Value = new System.DateTime(2021, 12, 21, 0, 0, 0, 0);
             // 
             // frmBuscar
             // 

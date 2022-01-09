@@ -91,7 +91,7 @@ namespace AccesoDatos
                 this.txtCedula.Text = row["cedula"].ToString();
                 this.txtNombres.Text = row["nombre"].ToString();
                 this.txtApellido.Text = row["apellido"].ToString();
-                this.datoFecha.Value =Convert.ToDateTime( row["fechadenacimiento"].ToString());
+                this.datoFecha.Value = Convert.ToDateTime(row["fechadenacimiento"].ToString());
                 this.txtPeso.Text = row["peso"].ToString();
 
             }
@@ -129,6 +129,11 @@ namespace AccesoDatos
 
                 }
             }
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
 
         }
     }

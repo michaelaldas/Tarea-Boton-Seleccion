@@ -30,6 +30,7 @@ namespace AccesoDatos
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.datoFecha = new System.Windows.Forms.DateTimePicker();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.txtPeso = new System.Windows.Forms.TextBox();
@@ -44,7 +45,6 @@ namespace AccesoDatos
             this.comboPersona = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnMostrar = new System.Windows.Forms.Button();
-            this.datoFecha = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +68,15 @@ namespace AccesoDatos
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de la persona";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // datoFecha
+            // 
+            this.datoFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.datoFecha.Location = new System.Drawing.Point(359, 194);
+            this.datoFecha.Name = "datoFecha";
+            this.datoFecha.Size = new System.Drawing.Size(301, 20);
+            this.datoFecha.TabIndex = 24;
             // 
             // btnActualizar
             // 
@@ -201,14 +210,6 @@ namespace AccesoDatos
             this.btnMostrar.Text = "Mostrar";
             this.btnMostrar.UseVisualStyleBackColor = true;
             this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click_1);
-            // 
-            // datoFecha
-            // 
-            this.datoFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.datoFecha.Location = new System.Drawing.Point(359, 194);
-            this.datoFecha.Name = "datoFecha";
-            this.datoFecha.Size = new System.Drawing.Size(301, 20);
-            this.datoFecha.TabIndex = 24;
             // 
             // frmEliminar
             // 

@@ -34,6 +34,11 @@ namespace AccesoDatos.Clases
             return res;
         }
 
+        internal static DataTable getpersona(object p)
+        {
+            throw new NotImplementedException();
+        }
+
         public static int Borrar(string cedula)
         {
             SqlConnection conexion = new SqlConnection(CadenaConex);
@@ -68,4 +73,5 @@ namespace AccesoDatos.Clases
     }
 
 }
+
 

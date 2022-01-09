@@ -56,6 +56,7 @@ namespace AccesoDatos
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
+
             DataTable dt = getpersona(this.comboPersona.SelectedValue.ToString());
             //mostrar la informacion
             foreach(DataRow row in dt.Rows)
@@ -67,6 +68,11 @@ namespace AccesoDatos
                 this.txtPeso.Text = row["peso"].ToString();
 
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
