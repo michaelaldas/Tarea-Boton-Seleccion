@@ -40,19 +40,19 @@ namespace AccesoDatos
                 else if (this.dgPersonas.Columns[e.ColumnIndex].Name == "LinkEliminar")
                 {
                     //MessageBox.Show("click en Eliminar");
-                    if (MessageBox.Show("¿ESTAS SEGURO QUE DESEAS ELIMINAR?", "CONFIRMAR", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MessageBox.Show("", "CONFIRMAR", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         string cedula = this.dgPersonas["Cédulas", e.RowIndex].Value.ToString();
                         int respuesta= Clases.Persona.Borrar(cedula);
                         if (respuesta > 0)
                         {
-                            MessageBox.Show("PERSONA ELIMINADA CON EXITO", "ELIMINO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("DATO ELIMINADO COORRECTAMENTO", "ELIMINO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             this.CargarPersonas();
                         }
                     }
                     else
                     {
-                        MessageBox.Show("NO SE ELIMINO NINGUN DATO", "CANCELACION", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("NO SE PUDO ELIMAR SU INFORMACION", "CANCELACION", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
 

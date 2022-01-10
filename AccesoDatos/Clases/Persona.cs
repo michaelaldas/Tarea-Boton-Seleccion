@@ -10,7 +10,7 @@ namespace AccesoDatos.Clases
 {
     public static class Persona
     {
-        private static string CadenaConex= @"server=DESKTOP-FR5FQ7D\SQLEXPRESS; database=TI2021; Integrated Security=true";
+        private static string CadenaConex= @"server=DESKTOP-FR5FQ7D\SQLEXPRESS; BASE-TIC2   ; Integrated Security=true";
 
         public static int Insertar(string cedula, string apellido, string nombre, DateTime fechadenacimiento, double peso)
         {
